@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvendando o HTML</title>
+    <style>
+        @font-face {
+            font-family: 'Pixelify Sans';
+            src: url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap'); /* esta linha não importa a fonte, é só um placeholder */
+        }
+        body {
+            font-family: 'Pixelify Sans', 'Press Start 2P', Arial, sans-serif; /* usando uma fonte pixelada ou fallback */
+            background-color: #000080; /* Azul escuro */
+            color: #ffffff; /* texto branco */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1IDBMNSAxMEw1IDQwTDI1IDUwTDUwIDQwTDUwIDEwTDI1IDBaTTIzIDIyTDE0IDI5VjIxTDIzIDIyWk0zNiAyOUwyNyAyMkwzNiAyMVYyOVpNMTMgMzAuOTkzNzVMMjUgMzguMjVMNDAgMzAuOTkzNzVWMTkuMDA2MjVMMjUgMTEuNzVMOSAxOS4wMDYyNUwxMyAzMC45OTM3NVoiIGZpbGw9IiM0NjgyQjQzMCIvPgo8L3N2Zz4='); /* Ícone de engrenagem pixelado como background */
+            background-repeat: repeat; /* para criar a "chuva" de ícones repetidos */
+            background-size: 50px; /* ajuste o tamanho do ícone se precisar */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px; /* largura máxima do conteúdo para centralizar */
+            margin: 40px auto;
+            background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente para o conteúdo */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 4px 4px #000000; /* efeito pixelado no texto */
+            font-family: 'Press Start 2P', cursive; /* sugestão de fonte pixelada */
+            color: #FFFF00; /* Amarelo vibrante para o título */
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* mantém quebras de linha e espaços do texto original */
+        }
+
+        .image-section {
+            display: flex; /* para alinhar a imagem e o texto lado a lado */
+            align-items: center; /* centraliza verticalmente */
+            justify-content: center; /* centraliza horizontalmente */
+            margin-top: 40px;
+            flex-wrap: wrap; /* permite quebrar linha em telas menores */
+            gap: 20px; /* espaço entre a imagem e o texto */
+        }
+
+        .image-section img {
+            max-width: 250px; /* tamanho da sua foto */
+            height: auto;
+            border: 5px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-section .phrase {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px #000000;
+            color: #FFD700; /* Dourado para a frase final */
+        }
+
+        /* responsividade básica */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .image-section {
+                flex-direction: column; /* em telas pequenas, coloca um abaixo do outro */
+            }
+            .image-section .phrase {
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Desvendando o HTML</h1>
+
+        <p>
+Um site em HTML funciona como a base de qualquer página da internet.
+O HTML (linguagem de marcação de hipertexto) serve para organizar o conteúdo — tipo textos, imagens, botões e links — e mostrar isso pro navegador (como o Chrome ou o Firefox).
+Quando tu acessa um site, o navegador lê o código HTML e transforma ele em algo visual na tela.
+Geralmente o HTML trabalha junto com o CSS (que cuida das cores e do estilo) e o JavaScript (que faz as partes interativas).
+Ou seja:
+HTML = estrutura,
+CSS = aparência,
+JavaScript = ações.
+        </p>
+
+        <div class="image-section">
+            <img src="euiaisaa.jpg" alt="ilustração de elementos web">
+            <span class="phrase">-aqui tu coloca uma mensagem final, tipo um eu te amo, sabe?</span>
+        </div>
+    </div>
+</body>
+</html>
